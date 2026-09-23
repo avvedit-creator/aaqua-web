@@ -226,12 +226,12 @@ p { margin: 0; color: var(--ink-soft); }
 }
 .stagger-word {
   display: inline-block;
-  animation: stagger-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: stagger-in 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 .stagger-text .stagger-word:nth-child(1) { animation-delay: 0ms; }
-.stagger-text .stagger-word:nth-child(2) { animation-delay: 80ms; }
-.stagger-text .stagger-word:nth-child(3) { animation-delay: 160ms; }
-.stagger-text .stagger-word:nth-child(4) { animation-delay: 240ms; }
+.stagger-text .stagger-word:nth-child(2) { animation-delay: 160ms; }
+.stagger-text .stagger-word:nth-child(3) { animation-delay: 320ms; }
+.stagger-text .stagger-word:nth-child(4) { animation-delay: 480ms; }
 @media (prefers-reduced-motion: reduce) {
   .stagger-word { animation: none; opacity: 1; filter: none; transform: none; }
 }
