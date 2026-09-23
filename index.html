@@ -64,8 +64,12 @@
     <div class="wrap">
       <div class="hero-copy">
         <span class="eyebrow">Comprometidos contra el hambre en Madrid</span>
-        <h1>Ayudar a quien <em>ayuda</em></h1>
-        <p class="hero-quote">Porque por encima de todo, los que creemos en Ayudar a Quien Ayuda es que hay que donar mucho amor y dignidad a todo aquel que lo necesite.</p>
+        <h1>Ayudar a quien
+          <span class="accent">ayuda
+            <svg class="squiggle" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 Q 15 2, 28 8 T 54 8 T 80 8 T 106 8 T 118 6" stroke="#1a8f3c"/></svg>
+          </span>
+        </h1>
+        <p class="hero-quote">"Hay que donar mucho amor y dignidad a todo aquel que lo necesite."</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#como-donar">Cómo donar</a>
           <a class="btn btn-ghost" href="contacto.html">Hazte voluntario/a</a>
@@ -98,19 +102,17 @@
         <span class="eyebrow">Cómo trabajamos</span>
         <h2 class="section-title">Donamos a quien lo necesita, y recibimos una cadena solidaria</h2>
       </div>
-      <div class="panels">
-        <div class="panel" data-reveal>
-          <div class="panel-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16"/></svg>
-          </div>
-          <h3>Donamos</h3>
+      <div class="stat-block" data-reveal>
+        <span class="stat-num">80</span>
+        <div class="stat-copy">
+          <h3>Donamos a quien lo necesita</h3>
           <p>Proveemos a 80 centros religiosos y de acción social. Centros que acogen y dan ayuda a las personas y familias sin recursos, que necesitan dignidad e ilusión para seguir luchando por salir adelante, y sobre todo esperanza porque estos malos tiempos pasarán.</p>
         </div>
-        <div class="panel" data-reveal>
-          <div class="panel-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"/><path d="M3 20c1.5-3.5 4.5-5 9-5s7.5 1.5 9 5"/></svg>
-          </div>
-          <h3>Recibimos</h3>
+      </div>
+      <div class="stat-block" data-reveal>
+        <span class="stat-num hand" style="color: var(--red);">+</span>
+        <div class="stat-copy">
+          <h3>Recibimos una cadena solidaria</h3>
           <p>Además de las donaciones, recibimos algo que no es cuantificable pero sí muy sentido: el apoyo de asistentes sociales, religiosas, sacerdotes y voluntarios que cada día trabajan en esos centros, y que nos demuestran que la cadena solidaria funciona.</p>
         </div>
       </div>
@@ -123,24 +125,12 @@
         <span class="eyebrow">Algunos comedores sociales</span>
         <h2 class="section-title">A dónde llega tu donación</h2>
       </div>
-      <div class="centers-strip" data-reveal>
-        <div class="center-card">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.2A7 7 0 0 1 19 9.8C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
-          Comedor Ave María
-        </div>
-        <div class="center-card">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.2A7 7 0 0 1 19 9.8C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
-          Misioneras de Jesús, María y José
-        </div>
-        <div class="center-card">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.2A7 7 0 0 1 19 9.8C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
-          Comedor María Inmaculada
-        </div>
-        <div class="center-card">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.2A7 7 0 0 1 19 9.8C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
-          C. Santiago Masarnau
-        </div>
-      </div>
+      <ul class="centers-list" data-reveal>
+        <li>Comedor Ave María</li>
+        <li>Misioneras de Jesús, María y José</li>
+        <li>Comedor María Inmaculada</li>
+        <li>C. Santiago Masarnau</li>
+      </ul>
     </div>
   </section>
 
@@ -152,21 +142,27 @@
       </div>
       <div class="steps" data-reveal>
         <div class="step">
-          <span class="step-num">1</span>
-          <h3>Compra en el súper</h3>
-          <p>Elige lo que más se necesita en los comedores sociales: alimentos no perecederos, desayunos, higiene personal, alimentos para bebés o alimentos sin gluten.</p>
+          <span class="step-num hand">1</span>
+          <div>
+            <h3>Compra en el súper</h3>
+            <p>Elige lo que más se necesita en los comedores sociales: alimentos no perecederos, desayunos, higiene personal, alimentos para bebés o alimentos sin gluten.</p>
+          </div>
         </div>
         <div class="step">
-          <span class="step-num">2</span>
-          <h3>Entrégalo en Aaqua</h3>
-          <p>Envía tu donación a la atención de Aaqua.</p>
-          <p class="step-detail">Plaza Luis García Berlanga 1, Humera · 28223 Pozuelo de Alarcón.<br />Lunes a viernes, 9:00 a 14:00h, avisando antes.</p>
+          <span class="step-num hand">2</span>
+          <div>
+            <h3>Entrégalo en Aaqua</h3>
+            <p>Envía tu donación a la atención de Aaqua.</p>
+            <p class="step-detail">Plaza Luis García Berlanga 1, Humera · 28223 Pozuelo de Alarcón. Lunes a viernes, 9:00 a 14:00h, avisando antes.</p>
+          </div>
         </div>
         <div class="step">
-          <span class="step-num">3</span>
-          <h3>Avísanos</h3>
-          <p>Indica tu nombre y tu teléfono. Al recibir tu donación te llamaremos y te enviaremos una foto para confirmarlo y agradecerte.</p>
-          <p class="step-detail">José: +34 609 10 62 94 · Berta: +34 659 05 75 92<br />aaqua@hotmail.es</p>
+          <span class="step-num hand">3</span>
+          <div>
+            <h3>Avísanos</h3>
+            <p>Indica tu nombre y tu teléfono. Al recibir tu donación te llamaremos y te enviaremos una foto para confirmarlo y agradecerte.</p>
+            <p class="step-detail">José: +34 609 10 62 94 · Berta: +34 659 05 75 92 · aaqua@hotmail.es</p>
+          </div>
         </div>
       </div>
     </div>
@@ -201,16 +197,9 @@
         <span class="eyebrow">Gracias a quien nos sostiene</span>
         <h2 class="section-title">Empresas e instituciones que nos ayudan</h2>
       </div>
-      <div class="logo-wall" data-reveal>
-        <span>Deloitte</span>
-        <span>JP Morgan</span>
-        <span>Stripe</span>
-        <span>Merck</span>
-        <span>IE University</span>
-        <span>Richemont Ibérica</span>
-        <span>Fundación Ordesa</span>
-        <span>Ayuntamiento de Pozuelo</span>
-      </div>
+      <p class="logo-flow" data-reveal>
+        <span>Deloitte</span><i class="sep">·</i><span>JP Morgan</span><i class="sep">·</i><span>Stripe</span><i class="sep">·</i><span>Merck</span><i class="sep">·</i><span>IE University</span><i class="sep">·</i><span>Richemont Ibérica</span><i class="sep">·</i><span>Fundación Ordesa</span><i class="sep">·</i><span>Ayuntamiento de Pozuelo</span><i class="sep">·</i><span>y otras 140 empresas más</span>.
+      </p>
       <div style="margin-top: 24px;" data-reveal>
         <a class="btn btn-ghost" href="ayudas.html">Ver todas las empresas y centros</a>
       </div>
