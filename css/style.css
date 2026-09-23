@@ -12,6 +12,10 @@
 :root {
   --navy: #0b4c7c;
   --navy-dark: #082f4d;
+  /* Fondos que deben verse siempre oscuros (footer, banner, etiqueta sobre foto),
+     sin invertir en modo oscuro como sí hacen --navy y --navy-dark cuando se usan como texto. */
+  --navy-surface: #0b4c7c;
+  --navy-surface-dark: #082f4d;
   --navy-soft: #e7eef4;
   --green: #1a8f3c;
   --red: #c22f28;
@@ -111,7 +115,7 @@ p { margin: 0; color: var(--ink-soft); }
 .btn-primary:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
 .btn-ghost { background: transparent; color: var(--navy); border-color: var(--line); }
 .btn-ghost:hover { border-color: var(--navy); }
-.btn-on-navy { background: #fff; color: var(--navy-dark); }
+.btn-on-navy { background: #fff; color: var(--navy-surface-dark); }
 .btn-on-navy:hover { background: #eef3f8; }
 
 /* ---------- Nav ---------- */
@@ -207,7 +211,7 @@ p { margin: 0; color: var(--ink-soft); }
 .hero-media { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 4 / 5; }
 .hero-media img { width: 100%; height: 100%; object-fit: cover; }
 .hero-media-tag {
-  position: absolute; left: 18px; bottom: 18px; background: color-mix(in srgb, var(--navy-dark) 82%, transparent);
+  position: absolute; left: 18px; bottom: 18px; background: color-mix(in srgb, var(--navy-surface-dark) 82%, transparent);
   color: #fff; padding: 10px 16px; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600; backdrop-filter: blur(6px);
 }
 
@@ -289,7 +293,7 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
 
 /* CTA banner */
 .cta-banner {
-  background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+  background: linear-gradient(135deg, var(--navy-surface-dark), var(--navy-surface));
   border-radius: var(--radius); padding: clamp(36px, 6vw, 64px); color: #fff;
   display: grid; grid-template-columns: 1.3fr auto; gap: 28px; align-items: center;
 }
@@ -325,7 +329,7 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
 @media (max-width: 480px) { .directory-featured { grid-template-columns: 1fr; } }
 
 /* Footer */
-.site-footer { background: var(--navy-dark); color: rgba(255,255,255,0.86); padding: 64px 0 28px; }
+.site-footer { background: var(--navy-surface-dark); color: rgba(255,255,255,0.86); padding: 64px 0 28px; }
 .footer-top { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.14); }
 .footer-brand { display: flex; flex-direction: column; gap: 14px; }
 .footer-brand img { height: 42px; }
